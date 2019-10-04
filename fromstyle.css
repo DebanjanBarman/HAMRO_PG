@@ -1,0 +1,75 @@
+body{
+    margin:0px;
+    color: rgb(0, 0, 0);
+
+}
+
+.openForm{
+    background-color:rgba(19, 64, 107, 0.6);
+    width: 300px;
+    margin: auto;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 650px;
+}
+input{
+    width: 95%;
+}
+.openForm input[type="text"],.openForm input[type="tel"],.openForm input[type="password"],.openForm input[type="email"]{
+
+    padding:8px;
+    width: 260px;
+    margin: auto;
+    border: none;
+    background-color: #ddd;
+    margin-bottom: 10px
+}
+.openForm input[type="text"]:focus,.openForm input[type="tel"],.openForm input[type="password"],.openForm input[type="email"]{
+
+    padding:8px;
+    width: 260px;
+    margin: auto;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px
+}
+
+button[type="submit"]{
+    background-color:#1100ff;
+    border: none;
+    width: 45%;
+    padding: 10px;
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button[type="reset"]{
+    background-color:rgb(255, 145, 0);
+    border: none;
+    width: 45%;
+    padding: 10px;
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+
+
+button:hover{
+    opacity: 1;
+}
+.login{
+    text-decoration:none;
+    cursor: pointer; 
+    color: #1100ff
+}
+.login:hover{
+    text-decoration:none;
+    cursor: pointer; 
+    color: blue;
+}

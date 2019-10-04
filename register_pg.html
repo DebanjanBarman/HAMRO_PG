@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamro PG</title>
+    <link rel="shortcut icon" href="img/hpg.png">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/arrow.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/waypoints.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+    button[type=reset],button[type=submit]{
+        width: 49.2%;
+    }
+
+    .jumbotron{
+        margin-bottom: 50px;
+        background-color: rgba(12, 51, 110, 0.274);
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+    <!--- Start Home section -->
+    <div id="home">
+
+        <!--- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" style="color: black;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/hpg.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">BACK TO HOME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--- Start Features Section -->
+        <div id="features" class="offset">
+
+            <!---Start Animation -->
+            <div class="os-animation" data-animation="fadeInUp">
+                <div class="narrow text-center">
+                    <div class="col-12">
+                        <h1
+                            style="font-weight:1500; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;font-size: 40px;">
+                            <span style="color: rgb(27, 182, 187)">Register Your PG </span></h1>
+                        <p class="lead"></p>
+                    </div>
+                </div>
+            </div>
+            <!--End animation-->
+
+            <div class="jumbotron" style="width: 360px; margin: auto; padding: 30px; margin-bottom: 50px;">
+                <form action="action.php" class="was-validated" method="POST">
+                    <div class="form-group">
+                      <label for="pgname">PG Name:</label>
+                      <input type="text" class="form-control" id="pg-name" placeholder="Enter PG Name" name="pgname" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please Enter A Valid Name.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="owname">Owner Name:</label>
+                      <input type="text" class="form-control" id="ow-name" placeholder="Owner Name" name="owname" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Mobile Number" name="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Enter A Working Phone Number</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email Id:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Id" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Enter An Working Email Id</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="yoe">Year of Establishment:</label>
+                        <select name="yoe" required id="yoe" class="form-control" >
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="older">OLDER</option>
+                        </select>                        
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Select One Entity</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea name="address" id="address" rows="3" class="form-control" required placeholder="Address"></textarea>                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Enter Exact Address In Details</div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="type">PG For:</label>
+                        <select name="type" required id="type" class="form-control" >
+                            <option value="BOYS">BOYS</option>
+                            <option value="GIRLS">GIRLS</option>
+                            <option value="BOTH">BOTH</option>
+                        </select>                        
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Select One Entity</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="room">Person Per Room:</label>
+                        <select multiple name="room" required id="room" class="form-control" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>                        
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Select One Entity</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="charge">Charge/Month:</label>
+                        <input type="number" class="form-control" id="charge" placeholder="Monthly Charge" name="charge" required min="1000" max="15000">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Enter Valid Charge</div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="advance">Advance Payment:</label>
+                        <input type="number" class="form-control" id="advance" placeholder="Advance Payment" name="adcharge" required min="0" max="15000">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please Enter Advance Charge</div>
+                      </div>
+                      <button type="reset" class="btn btn-warning">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                
+            </div>
+        
+
+
+            <!--- Start Contact Section -->
+            <div id="contact" class="offset">
+
+                <footer>
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <a href="index.html"><img src="img/hpg.png" alt=""></a>
+                            <p>Hamro PG is established in the year 2019. Hamro PG is basically a website to finds Paying
+                                Guest nearby Gangtok, East sikkim. Through this website everyone can access the
+                                different
+                                types of Paying Guest which is available in nearby Gangtok, East Sikkim. </p>
+                            <i class="fa fa-map-marker"></i><strong>Our Location</strong>
+                            <p>ICFAI University <br> Gangtok, Sikkim</p>
+                            <i class="fas fa-phone-alt"></i><strong>Contact Info</strong>
+                            <p>+91-8250070036<br>+91-9749354865<br>hamropg@gmail.com</p>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+
+                        <div class="col-md-7">
+                            <h3>Contact Us</h3>
+
+                            <form id="contact-form" method="post" action="contact.php">
+
+                                <div class="messages"></div>
+                                <div class="controls">
+
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Enter your name." required="required">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                            placeholder="Enter your email." required="required">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" class="form-control"
+                                            placeholder="Add your message." rows="4" required="required"></textarea>
+                                    </div>
+
+                                    <input type="submit" class="btn btn-outline-light btn-sm" value="Send message">
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <hr class="socket">
+                        <center>
+                            <p> &copy; 2019| Developed by Debanjan, Sandeep and Aakash</p>
+                        </center>
+                    </div>
+                    <!--- End of Row -->
+                </footer>
+                <!--- End of Footer -->
+
+            </div>
+            <!--- End Contact Section -->
+
+            <!--- Top Scroll -->
+            <a href="#home" class="top-scroll">
+                <i class="fas fa-angle-up"></i>
+            </a>
+            <!--- End of Top Scroll -->
+
+            <!--- Script Source Files -->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+            <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="js/jquery.waypoints.min.js"></script>
+            <script src="js/waypoints.js"></script>
+            <script src="js/lightbox.js"></script>
+            <script src="js/owl.carousel.js"></script>
+            <script src="js/jquery.counterup.js"></script>
+            <script src="js/validator.js"></script>
+            <script src="js/contact.js"></script>
+            <!--- End of Script Source Files -->
+
+</body>
+
+</html>
